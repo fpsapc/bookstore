@@ -1,8 +1,9 @@
 import React from 'react';
+import AddBook from './AddBook';
 
 const Books = () => (
   <div>
-    Book list
+    <AddBook />
   </div>
 );
 
