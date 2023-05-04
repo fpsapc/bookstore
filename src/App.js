@@ -7,14 +7,14 @@ import Categories from './components/Categories';
 
 function App() {
   return (
-<div>
-  <Navbar />
-  <Routes>
-    <Route exact path="/" element={<Books />} />
-    <Route exact path="categories" element={<Categories />} />
-  </Routes>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Books />} />
+        <Route exact path="categories" element={<Categories />} />
+      </Routes>
 
-</div>
+    </div>
 
   );
 }
