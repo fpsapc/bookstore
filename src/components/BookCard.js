@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const BookCard = () => {
-  return (
-    <div>
-      Book Card
-    </div>
-  )
-}
+const BookCard = () => (
+  <div>
+    Book Card
+  </div>
+);
 
-export default BookCard
+export default BookCard;
