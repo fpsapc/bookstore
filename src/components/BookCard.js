@@ -6,22 +6,24 @@ const BookCard = ({ book }) => {
   const renderBooks = book.map((book) => (
     <>
       <div className="bookContainer">
-        <div>
+        <div className="bookTitle">
           <p>{ book.category }</p>
           <p>{ book.title }</p>
           <p>{ book.author }</p>
-          <ul>
+          <ul className="buttonsList">
             <li><button type="button">Comments</button></li>
             <li><button type="button">Remove</button></li>
             <li><button type="button">Edit</button></li>
           </ul>
         </div>
-        <div>
+        <div className="bookChart">
           <div>Chart</div>
-          <p>{ book.progres }</p>
+          <div>
+            <p>{ book.progres }</p>
+            <p>COMPLETED</p>
+          </div>
         </div>
-        <div>
-          <p>status</p>
+        <div className="bookChapter">
           <p>{ book.currentChapter }</p>
           <p>{ book.chapterNumber }</p>
           <button type="button">Update Progress</button>
@@ -30,10 +32,8 @@ const BookCard = ({ book }) => {
     </>
   ));
   return (
-    <div>
-      {' '}
+    <div className="mainContainer">
       { renderBooks }
-      {' '}
     </div>
   );
 };
