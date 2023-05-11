@@ -20,7 +20,6 @@ const AddBook = () => {
       ...values,
       item_id: crypto.randomUUID(),
       [name]: value,
-      category: 'Action',
     }));
   };
 
@@ -33,7 +32,7 @@ const AddBook = () => {
   return (
     <section className="addBook">
       <h2>ADD NEW BOOK</h2>
-      <form className="addBookForm">
+      <form>
         <input
           value={values.title || ''}
           type="text"
@@ -49,6 +48,19 @@ const AddBook = () => {
           placeholder="author"
           onChange={handleChange}
         />
+        <select name="category" value={values.category || ''} type="text" onChange={handleChange}>
+          <option>category</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Classics">Classics</option>
+          <option value="Comic">Comic</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Historical">Historical</option>
+          <option value="Horror">Horror</option>
+          <option value="Romance">Romance</option>
+          <option value="Science">Science</option>
+        </select>
 
         <button type="submit" onClick={handleSubmit}>Add Book</button>
       </form>
