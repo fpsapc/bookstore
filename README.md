@@ -41,16 +41,18 @@
 JavaScript
 React
 Redux
+Redux Toolkit
+axios
 HTML
 CSS
-API
+ThunkAPI
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML, CSS, JavaScript, React, Redux, API</a></li>
+    <li><a href="#">HTML, CSS, JavaScript, React, Redux, ThunkAPI, Redux Toolkit, axios</a></li>
   </ul>
 </details>
 
@@ -68,9 +70,9 @@ API
   </ul>
 </details>
 <details>
-  <summary>API</summary>
+  <summary>bookStoreAPI</summary>
   <ul>
-    <li><a href="#">External API</a></li>
+    <li><a href="https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/jFR4oVvzLHn2zV4mVVdq">bookStoreAPI</a></li>
   </ul>
 </details>
 
@@ -80,7 +82,6 @@ API
 
 - **[Allow to use add new book]**
 - **[Allow to remove the book]**
-- **[Allow to comment the book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
